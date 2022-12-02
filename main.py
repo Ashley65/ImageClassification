@@ -25,3 +25,10 @@ test = tf.keras.utils.image_dataset_from_directory(
     **args
 )
 
+first = train.take(1)
+
+images, labels = list(first)[0]
+first_image = images[0]
+print(first_image[:3, :3, 0])
+
+Image.fromarray(first_image.numpy().astype("uint8"))
