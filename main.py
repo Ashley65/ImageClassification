@@ -1,4 +1,5 @@
 import tensorflow as tf
+from PIL import Image
 
 breeds = ["beagle", "bernese_mountain_dog", "doberman", "labrador_retriever", "siberian_husky"]
 # Dictionary of parameters
